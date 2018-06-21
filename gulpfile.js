@@ -9,13 +9,13 @@ gulp.task('serve', ['sass'], function() {
         proxy: "localhost:8888"
     });
 
-    gulp.watch("./sass/*.scss", ['sass']);
+    gulp.watch("./assets/sass/**/*.scss", ['sass']);
     gulp.watch("./*.php").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-    return gulp.src("./sass/style.scss")
+    return gulp.src("./assets/sass/main.scss")
         .pipe(sass())
         .pipe(gulp.dest("./"))
         .pipe(browserSync.stream());

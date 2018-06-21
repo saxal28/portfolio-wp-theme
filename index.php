@@ -15,45 +15,59 @@
 get_header();
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-		<?php
-		if ( have_posts() ) :
+  <div class="home-page-container">
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+		<div class="jumbotron">
+			
+			<div class="jumbotron-content container">
+			
+			<div class="jumbotron-circle">
+				<h1 class="main-title">Hello</h1>
+				<p class="sub-title">I'm Alan Sax</p>
+				<p class="minor-text">Web / Mobile Developer</p>
+			</div>
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+			</div>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+			<img class="down-arrow" src="<?php echo get_template_directory_uri()?>/assets/images/down-chevron.svg"/>      
 
-			endwhile;
+		</div>
 
-			the_posts_navigation();
+		<section class="section-1">
+			<div class="container">
+				<div class="home-collage">
+					<div class="collage-item web-dev-section">
+						<h2>Web Projects</h2>
+					</div>
+					<div class="collage-item web-design-section">
+						<h2>Design Projects</h2>                
+					</div>
+					<div class="collage-item mobile-dev-section">
+						<h2>Mobile Projects</h2>                
+					</div>
+				</div>
+			</div>
+		</section>
 
-		else :
+		<section class="section-2">
+			<div class="container">
+				<div class="project-spotlight">
+					<div class="spotlight-item">
+						<div class="spotlight-label">
+							<h1>Project Spotlight</h1>
+						</div>
+						<a class="spotlight-action">
+							<h1>View More</h1>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
 
-			get_template_part( 'template-parts/content', 'none' );
 
-		endif;
-		?>
+</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_sidebar();
+<?
 get_footer();
+?>

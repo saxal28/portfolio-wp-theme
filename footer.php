@@ -13,22 +13,21 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'alan-wp-portfolio' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'alan-wp-portfolio' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'alan-wp-portfolio' ), 'alan-wp-portfolio', '<a href="http://saxal.me">Alan Sax</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<footer class="content-info">
+  <div class="container">
+    <h1>Let's Get in Touch</h1>
+
+    <p>saxal28@gmail.com</p>
+    <p>618.581.3766</p>
+    <div class="social-media-row">
+
+        <img class="down-arrow" src="<? echo get_template_directory_uri()?>/assets/images/facebook-logo.svg">      
+        <img class="down-arrow" src="<? echo get_template_directory_uri()?>/assets/images/instagram-logo.svg">    
+        <img class="down-arrow"  src="<? echo get_template_directory_uri()?>/assets/images/linkedin-logo.svg">    
+        
+    </div>
+  </div>
+</footer>
 
 <?php wp_footer(); ?>
 

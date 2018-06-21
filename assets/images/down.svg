@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="150px" viewBox="0 0 150 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>chevron-circle-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="chevron-circle-down" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M150,75 C150,116.431452 116.431452,150 75,150 C33.5685484,150 0,116.431452 0,75 C0,33.5685484 33.5685484,0 75,0 C116.431452,0 150,33.5685484 150,75 Z M80.141129,109.445565 L121.118952,68.4677419 C123.961694,65.625 123.961694,61.0282258 121.118952,58.2157258 L115.977823,53.0745968 C113.135081,50.2318548 108.538306,50.2318548 105.725806,53.0745968 L75,83.8004032 L44.2741935,53.0745968 C41.4314516,50.2318548 36.8346774,50.2318548 34.0221774,53.0745968 L28.8810484,58.2157258 C26.0383065,61.0584677 26.0383065,65.6552419 28.8810484,68.4677419 L69.858871,109.445565 C72.7016129,112.288306 77.2983871,112.288306 80.141129,109.445565 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

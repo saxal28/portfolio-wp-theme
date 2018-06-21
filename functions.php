@@ -120,10 +120,13 @@ add_action( 'widgets_init', 'alan_wp_portfolio_widgets_init' );
  * Enqueue scripts and styles.
  */
 function alan_wp_portfolio_scripts() {
-	wp_enqueue_style( 'alan-wp-portfolio-style', get_stylesheet_uri() );
+
+	wp_enqueue_script('jquery');
+
+	wp_enqueue_style( 'main', get_template_directory_uri() . "/main.css" );
 
 	wp_enqueue_script( 'alan-wp-portfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
-
+	wp_enqueue_script( 'navbar', get_template_directory_uri() . '/js/navbar.js', array(), '20151215', true );
 	wp_enqueue_script( 'alan-wp-portfolio-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

@@ -16,7 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,300i,400,400i,600,800|Bahiana" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
@@ -24,32 +24,16 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'alan-wp-portfolio' ); ?></a>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$alan_wp_portfolio_description = get_bloginfo( 'description', 'display' );
-			if ( $alan_wp_portfolio_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $alan_wp_portfolio_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+	<img src="<?php echo get_template_directory_uri()?>/assets/images/menu.svg" class="nav-toggle" />
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'alan-wp-portfolio' ); ?></button>
+	<header id="masthead" class="site-header">
+
+		<nav id="site-navigation" class="nav-primary">
+
 			<?php
 			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
+				'theme_location' => 'primary_mavigation',
+				'menu_id'        => 'nav',
 			) );
 			?>
 		</nav><!-- #site-navigation -->

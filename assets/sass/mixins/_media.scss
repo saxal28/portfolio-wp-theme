@@ -1,0 +1,18 @@
+//bootstrap breakpoints
+$bootstrap-xs: '(min-width: 543px)';
+$bootstrap-sm: '(min-width: 544px) and (max-width: 767px)';
+$bootstrap-md: '(min-width: 768px) and (max-width: 991px)';
+$bootstrap-lg: '(min-width: 992px) and (max-width: 1199px)';
+$bootstrap-xl: '(min-width: 1200px)';
+
+$desktop: '(min-width: 992px)';
+$mobile: '(max-width: 991px)';
+$tablet: '(max-width: 768px)';
+$phone: '(max-width: 544px)';
+
+
+@mixin respond-to-breakpoint($media) {
+  @media only screen and #{$media} {
+    @content;
+  }
+}
