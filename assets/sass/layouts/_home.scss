@@ -32,7 +32,7 @@ section {
 
 .section-1 {
 
-  padding-top: 10vh;
+  padding-top: 200px;
 
   display: flex;
   align-items: center;
@@ -44,7 +44,7 @@ section {
 
 .section-2 {
   min-height: inherit;
-  padding-bottom: 10vh;
+  padding-bottom: 200px;
 }
 
 .home-collage {
@@ -138,6 +138,9 @@ section {
   background-image: url("https://i.imgur.com/FFaK3VJ.jpg");
   background-size: cover;
   background-position: 50%;
+
+  box-shadow: 0px 2px 15px rgba(0,0,0,0.3);      
+
 
   .spotlight-label {
     position: absolute;

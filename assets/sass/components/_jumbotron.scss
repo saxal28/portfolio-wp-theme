@@ -2,7 +2,6 @@
     height: 100vh;
 
     background-size: cover;
-    background-image: url(https://i.imgur.com/EhaAs3W.jpg);
     position: relative;
 
     background-attachment: fixed;
@@ -26,9 +25,9 @@
       .jumbotron-circle {
         height: 450px;
         width: 450px;
-        border-radius: 50%;
+        // border-radius: 50%;
 
-        background: #333;
+        // background: #333;
         border: 14px solid white;
 
         display: flex;

@@ -1,5 +1,4 @@
 body {
-    background-color: $background-color;
     margin: 0;
     padding: 0;
   
@@ -8,6 +7,11 @@ body {
   
     height: 100%;
     width: 100%;
+    
+    background-image: url('https://i.imgur.com/N0GOGqv.jpg');
+    background-size: cover;
+    
+
   }
   
   #page {

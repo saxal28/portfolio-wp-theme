@@ -30,11 +30,13 @@ get_header();
 
 			</div>
 
-			<img class="down-arrow" src="<?php echo get_template_directory_uri()?>/assets/images/down-chevron.svg"/>      
+			<img class="down-arrow" src="<?php echo get_template_directory_uri()?>/assets/images/down-chevron.svg"/>    
+
+			<img class="zig-zag-line" src="<?php echo get_template_directory_uri()?>/assets/images/zigzag.svg" />
 
 		</div>
 
-		<section class="section-1">
+		<!-- <section class="section-1">
 			<div class="container">
 				<div class="home-collage">
 					<div class="collage-item web-dev-section">
@@ -63,7 +65,7 @@ get_header();
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
 
 </div>
